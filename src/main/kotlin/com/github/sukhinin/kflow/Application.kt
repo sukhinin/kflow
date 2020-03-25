@@ -74,7 +74,7 @@ object Application {
     private fun parseCommandLineArgs(args: Array<String>): Namespace {
         val parser = ArgumentParsers.newFor("kflow").build()
             .defaultHelp(true)
-            .description("Prometheus remote write backend with Kafka export.")
+            .description("Fast IPFIX flows collector with Kafka export.")
         parser.addArgument("-c", "--config")
             .metavar("PATH")
             .help("path to configuration file")
