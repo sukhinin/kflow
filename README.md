@@ -35,7 +35,7 @@ Configuration values are resolved from multiple sources with the following prece
 | `server.threads` | Number of processing threads |
 | `server.buffer.size` | SO_RCVBUF buffer size in bytes (allocated per processing thread) |
 | `kafka.topic` | Kafka topic to write decoded flows to |
-| `kafka.producers` | Number of Kafka producers (see [Performance notes](#performance-notes) |
+| `kafka.producers` | Number of Kafka producers (see [Performance notes](#performance-notes)) |
 | `kafka.props.bootstrap.servers` | Kafka brokers to setup initial connection with |
 | `kafka.props.*` | Various Kafka producer configuration properties (see [producer docs](https://kafka.apache.org/documentation/#producerconfigs)) |
 | `metrics.port` | Port number to expose Prometheus metrics |
