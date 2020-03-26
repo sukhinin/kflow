@@ -12,7 +12,9 @@ deploy:
     secure: MDJyZASSVQ1aWVUCWregKPSHCeyln+MhSRMozJJPvfm0aCTHIt0KJI45NUNek7R3x7dKEZp0rDHIcMlsDZ+pgoDC7NI+YdZpqKCjc/NiLBr94xw6/RQWEbS/ZU6eHx65V3fd3vIeMrKpC6QB4GMQa0VnC6ethhSoCaeSnXMRqIIkv/TpSpMZrbAI8LO4d4rzYhsksi2p54A0o4wQAYfJ3yTb710dOO94Fhr1bnvkKBVQjean2IoedDFwbu2McZINrXMUtE8V9plnWnAlQ3Bfx2kjdkuNNxFxP2WEsK4+p3CFrDLO+Mwg1GXmMO38opmEM8alkcaBdXf2mMqd6hnRgBCnEROtr4Dnl8moXslqqu2ojmJasNxXaXPOrp1ONisR/eHvO0T1aYpOBj54M+vjmK2AnfxVK39njhPabD8i17r8pee+O01UxaVHe5FO6ww6ZIOZeklQpwveYXIa1puyREJfwSC4J5jAWAUpeq5dHgL64xMBV4v7ekj68AQyFKAyhhuPsm5A4qlFP13BgW2LIRLPx5B0safD5CovVOaOGQKtFXb2qP4Lxrh4bGeukiwHfZu08eVcYtEF5K8NhtkiGXyOrC/zCdqZtEbLe401zQtaNsYSFeUG/GuRW+ZX/i84z16yBMk4NsTvMUpLYuw5RCq7HElXXbK5Hz7kn5CgfMM=
   skip_cleanup: true
   file_glob: true
-  file: build/libs/kflow-*-all.jar
+  file:
+    - build/libs/kflow-*-all.jar
+    - build/distributions/kflow-*.tar
   draft: true
   on:
     tags: true
