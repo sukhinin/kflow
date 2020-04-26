@@ -1,6 +1,7 @@
 package com.github.sukhinin.kflow.server
 
 import com.github.sukhinin.simpleconfig.Config
+import com.github.sukhinin.simpleconfig.getInteger
 
 object ServerConfigMapper {
     fun from(config: Config) =
